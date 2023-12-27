@@ -1,0 +1,190 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background:rgb(2,0,36);
+}
+
+
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: bisque;
+    padding: 5%;   
+    margin: 0;
+}
+
+.bleu {
+    color: rgb(0, 157, 254);
+}
+
+.rouge {
+    color: rgb(250, 75, 75);
+}
+
+li {
+    color: rgb(0, 0, 0);
+    list-style-type: none;   
+    line-height: 1.5cm;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;  
+    font-family: 'Arial', sans-serif;
+    font-size: larger; 
+    
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+ 
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+nav ul::after {
+    content: "" ;
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(0, 157, 255);
+    transition: 0.3s;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px #ccc;
+    background-color: white;
+    
+    
+}
+
+nav > ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after {
+    content: "▼";
+    font-size: 12px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+}
+
+.card-title {
+color:rgb(255, 230, 0);
+font-style: italic;
+text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: bold;
+    
+    
+}
+
+.card-text {
+
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Roboto', sans-serif;
+    
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: bold;
+    font-style: italic; */
+    line-height: 2em;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+.card-body {
+    background: rgb(18,255,252);
+    background: linear-gradient(287deg, rgba(18,255,252,1) 0%, rgba(194,160,182,1) 32%, rgba(55,121,122,1) 72%);   
+    background: #1E2022;
+}
+
+.video {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.affiche {
+    width: 15%;
+    height: 15%;
+}
+
+p{
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;    
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+}
+
+.photos_colomne {
+    width: 20%;
+}
+
+.photos img {
+    width: 100%;
+}
+
+.texte {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+.photos_acteurs {
+    width: 20%;
+    margin-left: 5%;
+}
+
